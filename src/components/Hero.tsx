@@ -74,7 +74,10 @@ const Hero: React.FC = () => {
                             View Projects
                             <ArrowDownRight className="w-4 h-4 group-hover:rotate-45 transition-transform" />
                         </button>
-                        <button className="px-8 py-4 rounded-full font-medium border border-gray-600 text-white hover:border-white transition-colors">
+                        <button
+                            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                            className="px-8 py-4 rounded-full font-medium border border-gray-600 text-white hover:border-white transition-colors"
+                        >
                             Contact Me
                         </button>
                     </motion.div>
